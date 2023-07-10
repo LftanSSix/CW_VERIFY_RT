@@ -29,3 +29,12 @@
 .\output\exe\main.o: ..\USER\inc\tim.h
 .\output\exe\main.o: ..\USER\inc\hpd.h
 .\output\exe\main.o: ..\PRV\delay.h
+.\output\exe\main.o: ..\FreeRTOS\Source\include\FreeRTOS.h
+.\output\exe\main.o: ..\FreeRTOS\FreeRTOSConfig.h
+.\output\exe\main.o: ..\FreeRTOS\Source\include\projdefs.h
+.\output\exe\main.o: ..\FreeRTOS\Source\include\portable.h
+.\output\exe\main.o: ..\FreeRTOS\Source\include\deprecated_definitions.h
+.\output\exe\main.o: ..\FreeRTOS\Source\portable\RVDS\ARM_CM0\portmacro.h
+.\output\exe\main.o: ..\FreeRTOS\Source\include\mpu_wrappers.h
+.\output\exe\main.o: ..\FreeRTOS\Source\include\task.h
+.\output\exe\main.o: ..\FreeRTOS\Source\include\list.h

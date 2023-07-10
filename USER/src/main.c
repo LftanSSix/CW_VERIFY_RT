@@ -1,4 +1,18 @@
 #include "main.h"
+/* Standard includes. */
+#include "string.h"
+
+/* FreeRTOS includes. */
+#include "FreeRTOS.h"
+#include "task.h"
+
+static TaskHandle_t AppTaskCreate_Handle = NULL;
+TaskHandle_t testTask1Handle = NULL;
+TaskHandle_t testTask2Handle = NULL;
+
+static void AppTaskCreate(void);
+void testTask1(void);
+void testTask2(void);
 
 extern uint32_t SystemCoreClock;
 extern const u8 EQ_Address[];
@@ -21,27 +35,92 @@ extern u8 it6635_i2c_read(u8 addr, u8 offset, u8 length, u8 *buffer);
 u8 bbud[3], bbud1[3];
 extern void uartCMDGen(void);
 extern void selPortX(u8 px);
+u8 flg;
 
 int32_t main(void)
 { 
   RCC_Config(); 
-  Lvd_Config();//欠压复位配置
-  delay1ms(100);//等待复位完成
-
+//  Lvd_Config();//欠压复位配置
+	
   UART_Init();
   gpio_init();	
   i2c_init();
 
-  NVIC_Configuration();
+  // NVIC_Configuration();
   TIM_Init();
 
   // USART_ITConfig(DEBUG_USARTx, USART_IT_RC, ENABLE); //UART1使能接收中断
-  USART_ITConfig(DEBUG_USART2, USART_IT_RC, ENABLE); //UART2使能接收中断
-  while(1)
-  { 
-
+  // USART_ITConfig(DEBUG_USART2, USART_IT_RC, ENABLE); //UART2使能接收中断
 	
-  }
+  BaseType_t xReturn = pdPASS;
+  
+   /* Create AppTaskCreate Task */
+  xReturn = xTaskCreate((TaskFunction_t )AppTaskCreate,
+                        (const char*    )"AppTaskCreate",
+                        (uint16_t       )512,
+                        (void*          )NULL,
+                        (UBaseType_t    )1,
+                        (TaskHandle_t*  )&AppTaskCreate_Handle);
+  if(xReturn == pdTRUE)
+	{
+	  printf("Create task ok, Start the scheduler\r\n"); //Create task ok
+	
+		/* Start the scheduler. */
+		vTaskStartScheduler();
+	}
+
+  for( ;; );
+}
+
+static void AppTaskCreate(void)
+{
+  BaseType_t xReturn = pdPASS;
+  taskENTER_CRITICAL();
+  xReturn = xTaskCreate((TaskFunction_t )testTask1,
+                        (const char*    )"testTask1",
+                        (uint16_t       )100, //
+                        (void*          )NULL, 
+                        (UBaseType_t    )1,
+                        (TaskHandle_t*  )&testTask1Handle);
+  if(xReturn == pdTRUE)
+	  printf("Create task1 ok\r\n");
+  
+  xReturn = xTaskCreate((TaskFunction_t )testTask2,
+                        (const char*    )"testTask2",
+                        (uint16_t       )100,
+                        (void*          )NULL,
+                        (UBaseType_t    )3,
+                        (TaskHandle_t*  )&testTask2Handle);
+  if(xReturn == pdTRUE)
+	  printf("Create task2 ok\r\n");
+	printf("Before TaskDelete FreeHeapSize is %d\r\n", xPortGetFreeHeapSize());
+  vTaskDelete(AppTaskCreate_Handle);
+	printf("After TaskDelete FreeHeapSize is %d\r\n", xPortGetFreeHeapSize());
+  taskEXIT_CRITICAL();
+}
+
+void testTask1(void)
+{
+	printf("FreeHeapSize is %d\r\n", xPortGetFreeHeapSize());
+
+//	TickType_t tickcnt[2] = {0};
+	for( ;; )
+	{	
+		PA03_TOG();
+//		tickcnt[0] = xTaskGetTickCount();
+		vTaskDelay(5);
+//		tickcnt[1] = xTaskGetTickCount();
+//		printf("interval is : %d\r\n", (tickcnt[1] - tickcnt[0]));
+	}
+}
+
+void testTask2(void)
+{
+	for( ;; )
+	{
+		PA04_TOG();
+		vTaskDelay(20);
+	}
 }
 
 void RCC_Config(void)
@@ -140,3 +219,59 @@ void Lvd_Config(void)
   LVD_TrigConfig(LVD_TRIG_LEVEL, ENABLE);               //监测电压低于阈值时触发 LVD 动作
   LVD_Enable();                                         //LVD使能
 }
+
+/*-----------------------------------------------------------*/
+
+void vApplicationMallocFailedHook( void )
+{
+	/* vApplicationMallocFailedHook() will only be called if
+	configUSE_MALLOC_FAILED_HOOK is set to 1 in FreeRTOSConfig.h.  It is a hook
+	function that will get called if a call to pvPortMalloc() fails.
+	pvPortMalloc() is called internally by the kernel whenever a task, queue,
+	timer or semaphore is created.  It is also called by various parts of the
+	demo application.  If heap_1.c or heap_2.c are used, then the size of the
+	heap available to pvPortMalloc() is defined by configTOTAL_HEAP_SIZE in
+	FreeRTOSConfig.h, and the xPortGetFreeHeapSize() API function can be used
+	to query the size of free heap space that remains (although it does not
+	provide information on how the remaining heap might be fragmented). */
+	taskDISABLE_INTERRUPTS();
+	for( ;; );
+}
+/*-----------------------------------------------------------*/
+
+void vApplicationIdleHook( void )
+{
+	/* vApplicationIdleHook() will only be called if configUSE_IDLE_HOOK is set
+	to 1 in FreeRTOSConfig.h.  It will be called on each iteration of the idle
+	task.  It is essential that code added to this hook function never attempts
+	to block in any way (for example, call xQueueReceive() with a block time
+	specified, or call vTaskDelay()).  If the application makes use of the
+	vTaskDelete() API function (as this demo application does) then it is also
+	important that vApplicationIdleHook() is permitted to return to its calling
+	function, because it is the responsibility of the idle task to clean up
+	memory allocated by the kernel to any task that has since been deleted. */
+}
+/*-----------------------------------------------------------*/
+
+void vApplicationStackOverflowHook( TaskHandle_t pxTask, char *pcTaskName )
+{
+	( void ) pcTaskName;
+	( void ) pxTask;
+
+	/* Run time stack overflow checking is performed if
+	configCHECK_FOR_STACK_OVERFLOW is defined to 1 or 2.  This hook
+	function is called if a stack overflow is detected. */
+	taskDISABLE_INTERRUPTS();
+	for( ;; );
+}
+/*-----------------------------------------------------------*/
+
+void vApplicationTickHook( void )
+{
+	/* This function will be called by each tick interrupt if
+	configUSE_TICK_HOOK is set to 1 in FreeRTOSConfig.h.  User code can be
+	added here, but the tick hook is called from an interrupt context, so
+	code must not attempt to block, and only the interrupt safe FreeRTOS API
+	functions can be used (those that end in FromISR()). */
+}
+/*-----------------------------------------------------------*/

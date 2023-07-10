@@ -31,6 +31,15 @@
 ".\output\exe\cw32f030_uart.o"
 ".\output\exe\cw32f030_vc.o"
 ".\output\exe\cw32f030_wwdt.o"
+".\output\exe\croutine.o"
+".\output\exe\event_groups.o"
+".\output\exe\list.o"
+".\output\exe\queue.o"
+".\output\exe\stream_buffer.o"
+".\output\exe\tasks.o"
+".\output\exe\timers.o"
+".\output\exe\heap_4.o"
+".\output\exe\port.o"
 --library_type=microlib --strict --scatter ".\output\exe\HK821C.sct"
 --keep=*Handler --summary_stderr --info summarysizes --map --load_addr_map_info --symbols
 --info sizes --info totals

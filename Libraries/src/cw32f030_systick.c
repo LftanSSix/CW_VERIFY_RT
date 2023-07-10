@@ -161,9 +161,9 @@ __weak void ResumeTick(void)
 /**
   * @brief This function handles System tick timer.
   */
-void SysTick_Handler(void)
-{
-    /* USER CODE BEGIN SysTick_IRQn */
-    uwTick += uwTickFreq;
-    /* USER CODE END SysTick_IRQn */
-}
+//void SysTick_Handler(void)
+//{
+//    /* USER CODE BEGIN SysTick_IRQn */
+//    uwTick += uwTickFreq;
+//    /* USER CODE END SysTick_IRQn */
+//}

@@ -6,38 +6,10 @@ void gpio_init(void)
 	RCC_AHBPeriphClk_Enable(RCC_AHB_PERIPH_GPIOA, ENABLE);	
 	RCC_AHBPeriphClk_Enable(RCC_AHB_PERIPH_GPIOB, ENABLE);	
 
-//	GPIO_InitStruct.Pins = (bv0|bv1|bv2|bv3|bv4|bv5|bv6|bv7);               //HPD_1~8_A
-//	GPIO_InitStruct.Pins |= GPIO_PIN_11;                                    //TX_POW_A
-//	GPIO_InitStruct.Pins |= GPIO_PIN_10;                                    //FOR BUZZER
-//	GPIO_InitStruct.Pins |= GPIO_PIN_15;                                    //PA15 TEST PIN
-	GPIO_InitStruct.Pins |= GPIO_PIN_4;                                    
+	GPIO_InitStruct.Pins |= GPIO_PIN_4 | GPIO_PIN_3;                                    
 	GPIO_InitStruct.Mode = GPIO_MODE_OUTPUT_PP;
-	GPIO_InitStruct.Speed= GPIO_SPEED_LOW;
+	GPIO_InitStruct.Speed= GPIO_SPEED_HIGH;
 	GPIO_Init( CW_GPIOA , &GPIO_InitStruct);
-//  
-//	GPIO_WritePin(CW_GPIOA,(bv0|bv1|bv2|bv3|bv4|bv5|bv6|bv7),GPIO_Pin_SET); //下板所有Hpd置低
-//	PA11_SETHIGH();                                                         //下板 TX POWER ON
-//	PA10_SETLOW();                                                          //BUZZER OFF
-//  
-//	GPIO_InitStruct.Pins = (bv3|bv4|bv5|bv6|bv7|bv8|bv9|bv12);              //HPD_1~8_B &PB03->TEST PIN
-//	GPIO_InitStruct.Pins |= GPIO_PIN_14; 
-//	GPIO_InitStruct.Pins |= GPIO_PIN_13;                                    //TX_POW_B
-//	GPIO_InitStruct.Mode = GPIO_MODE_OUTPUT_PP;
-//	GPIO_InitStruct.Speed= GPIO_SPEED_HIGH;
-//	GPIO_Init( CW_GPIOB , &GPIO_InitStruct);
-//  
-//    GPIO_WritePin(CW_GPIOB,(bv3|bv4|bv5|bv6|bv7|bv8|bv9|bv12),GPIO_Pin_SET);//上板所有Hpd置低
-//    PB13_SETHIGH();                                                         //上板 TX POWER ON
-//  
-//	GPIO_InitStruct.Pins = GPIO_PIN_2;                                      //FOR AD_KEY1 IN pb02
-//	GPIO_InitStruct.Mode = GPIO_MODE_ANALOG;
-//	GPIO_Init( CW_GPIOB , &GPIO_InitStruct);
-
-//	GPIO_InitStruct.Pins = GPIO_PIN_15 ;                                    //FOR IR IN pb15
-//	GPIO_InitStruct.Mode = GPIO_MODE_INPUT; 
-//	GPIO_InitStruct.Speed= GPIO_SPEED_HIGH;
-//	GPIO_Init( CW_GPIOB , &GPIO_InitStruct);
-//    PB15_AFx_GTIM4CH1();	                                                  //pb15->gtim4ch1
 }
 
 void i2c_init(void)
