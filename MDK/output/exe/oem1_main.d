@@ -1,0 +1,11 @@
+.\output\exe\oem1_main.o: ..\IT6635_OK_LEE20191108\OEM1_Main.c
+.\output\exe\oem1_main.o: E:\Keil_v5\ARM\ARMCC\Bin\..\include\stdio.h
+.\output\exe\oem1_main.o: E:\Keil_v5\ARM\ARMCC\Bin\..\include\stdlib.h
+.\output\exe\oem1_main.o: ..\IT6635_OK_LEE20191108\chip/config.h
+.\output\exe\oem1_main.o: ..\IT6635_OK_LEE20191108\chip/debug.h
+.\output\exe\oem1_main.o: ..\IT6635_OK_LEE20191108\chip/it6635_drv.h
+.\output\exe\oem1_main.o: ..\PRV\sysb.h
+.\output\exe\oem1_main.o: ..\IT6635_OK_LEE20191108\chip/it6635.h
+.\output\exe\oem1_main.o: ..\IT6635_OK_LEE20191108\IO_IT6350.h
+.\output\exe\oem1_main.o: ..\IT6635_OK_LEE20191108\version.h
+.\output\exe\oem1_main.o: ..\IT6635_OK_LEE20191108\global_hid.h

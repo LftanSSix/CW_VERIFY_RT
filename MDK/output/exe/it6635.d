@@ -1,0 +1,10 @@
+.\output\exe\it6635.o: ..\IT6635_OK_LEE20191108\chip\IT6635.C
+.\output\exe\it6635.o: ..\IT6635_OK_LEE20191108\chip\config.h
+.\output\exe\it6635.o: ..\IT6635_OK_LEE20191108\chip\platform.h
+.\output\exe\it6635.o: E:\Keil_v5\ARM\ARMCC\Bin\..\include\stdio.h
+.\output\exe\it6635.o: ..\IT6635_OK_LEE20191108\chip\debug.h
+.\output\exe\it6635.o: ..\IT6635_OK_LEE20191108\chip\it6635_drv.h
+.\output\exe\it6635.o: ..\PRV\sysb.h
+.\output\exe\it6635.o: ..\IT6635_OK_LEE20191108\chip\it6635_EQ.h
+.\output\exe\it6635.o: ..\IT6635_OK_LEE20191108\chip\it6635.h
+.\output\exe\it6635.o: ..\IT6635_OK_LEE20191108\chip\IT6635_drv_h_str.h
