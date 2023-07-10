@@ -38,3 +38,4 @@
 .\output\exe\main.o: ..\FreeRTOS\Source\include\mpu_wrappers.h
 .\output\exe\main.o: ..\FreeRTOS\Source\include\task.h
 .\output\exe\main.o: ..\FreeRTOS\Source\include\list.h
+.\output\exe\main.o: ..\FreeRTOS\Source\include\queue.h

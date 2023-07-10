@@ -15,7 +15,7 @@ I (E:\Keil_v5\ARM\ARMCC\include\string.h)(0x5F63878A)
 I (E:\Keil_v5\ARM\ARMCC\include\stddef.h)(0x5F63877C)
 I (E:\Keil_v5\ARM\ARMCC\include\assert.h)(0x5F63877C)
 I (..\Libraries\inc\cw32f030_rcc.h)(0x6274DF67)
-F (..\USER\src\main.c)(0x64A7E39B)(--c99 -c --cpu Cortex-M0+ -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ..\Libraries\inc -I ..\USER\inc -I ..\PRV -I ..\IT6635_OK_LEE20191108 -I ..\IT6635_OK_LEE20191108\chip -I ..\IT6635_OK_LEE20191108\Customer -I ..\ITE_6635_OK_LBY20230608_DUAL -I ..\ITE_6635_OK_LBY20230608_DUAL\chip -I ..\ITE_6635_OK_LBY20230608_DUAL\Customer -I ..\FreeRTOS -I ..\FreeRTOS\Source\include -I ..\FreeRTOS\Source\portable\RVDS\ARM_CM0-I.\RTE\_Project-IE:\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\Core\Include-IE:\Arm\Packs\WHXY\CW32F030_DFP\1.0.1\Device\Include-D__UVISION_VERSION="532" -D_RTE_ -D_RTE_ -DBOARD_CW32F030CX-o .\output\exe\main.o --omf_browse .\output\exe\main.crf --depend .\output\exe\main.d)
+F (..\USER\src\main.c)(0x64ABBA2D)(--c99 -c --cpu Cortex-M0+ -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ..\Libraries\inc -I ..\USER\inc -I ..\PRV -I ..\IT6635_OK_LEE20191108 -I ..\IT6635_OK_LEE20191108\chip -I ..\IT6635_OK_LEE20191108\Customer -I ..\ITE_6635_OK_LBY20230608_DUAL -I ..\ITE_6635_OK_LBY20230608_DUAL\chip -I ..\ITE_6635_OK_LBY20230608_DUAL\Customer -I ..\FreeRTOS -I ..\FreeRTOS\Source\include -I ..\FreeRTOS\Source\portable\RVDS\ARM_CM0-I.\RTE\_Project-IE:\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\Core\Include-IE:\Arm\Packs\WHXY\CW32F030_DFP\1.0.1\Device\Include-D__UVISION_VERSION="532" -D_RTE_ -D_RTE_ -DBOARD_CW32F030CX-o .\output\exe\main.o --omf_browse .\output\exe\main.crf --depend .\output\exe\main.d)
 I (..\USER\inc\main.h)(0x64A7BAF6)
 I (..\Libraries\inc\base_types.h)(0x6274DF67)
 I (E:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x5F63877C)
@@ -46,14 +46,15 @@ I (..\USER\inc\tim.h)(0x63049381)
 I (..\USER\inc\hpd.h)(0x632A8D4D)
 I (..\PRV\delay.h)(0x62DA04E5)
 I (..\FreeRTOS\Source\include\FreeRTOS.h)(0x64020E50)
-I (..\FreeRTOS\FreeRTOSConfig.h)(0x64A7E1C8)
+I (..\FreeRTOS\FreeRTOSConfig.h)(0x64ABB208)
 I (..\FreeRTOS\Source\include\projdefs.h)(0x64020E50)
 I (..\FreeRTOS\Source\include\portable.h)(0x64020E50)
 I (..\FreeRTOS\Source\include\deprecated_definitions.h)(0x64020E50)
 I (..\FreeRTOS\Source\portable\RVDS\ARM_CM0\portmacro.h)(0x64A7C6FF)
 I (..\FreeRTOS\Source\include\mpu_wrappers.h)(0x64020E50)
-I (..\FreeRTOS\Source\include\task.h)(0x64020E50)
+I (..\FreeRTOS\Source\include\task.h)(0x64ABA8B0)
 I (..\FreeRTOS\Source\include\list.h)(0x64020E50)
+I (..\FreeRTOS\Source\include\queue.h)(0x64020E50)
 F (..\USER\src\interrupts_cw32f030.c)(0x64A7C505)(--c99 -c --cpu Cortex-M0+ -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ..\Libraries\inc -I ..\USER\inc -I ..\PRV -I ..\IT6635_OK_LEE20191108 -I ..\IT6635_OK_LEE20191108\chip -I ..\IT6635_OK_LEE20191108\Customer -I ..\ITE_6635_OK_LBY20230608_DUAL -I ..\ITE_6635_OK_LBY20230608_DUAL\chip -I ..\ITE_6635_OK_LBY20230608_DUAL\Customer -I ..\FreeRTOS -I ..\FreeRTOS\Source\include -I ..\FreeRTOS\Source\portable\RVDS\ARM_CM0-I.\RTE\_Project-IE:\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\Core\Include-IE:\Arm\Packs\WHXY\CW32F030_DFP\1.0.1\Device\Include-D__UVISION_VERSION="532" -D_RTE_ -D_RTE_ -DBOARD_CW32F030CX-o .\output\exe\interrupts_cw32f030.o --omf_browse .\output\exe\interrupts_cw32f030.crf --depend .\output\exe\interrupts_cw32f030.d)
 I (..\USER\inc\main.h)(0x64A7BAF6)
 I (..\Libraries\inc\base_types.h)(0x6274DF67)
@@ -565,7 +566,7 @@ F (..\FreeRTOS\Source\croutine.c)(0x64020E50)(--c99 -c --cpu Cortex-M0+ -D__MICR
 I (..\FreeRTOS\Source\include\FreeRTOS.h)(0x64020E50)
 I (E:\Keil_v5\ARM\ARMCC\include\stddef.h)(0x5F63877C)
 I (E:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x63E45B4D)
-I (..\FreeRTOS\FreeRTOSConfig.h)(0x64A7E1C8)
+I (..\FreeRTOS\FreeRTOSConfig.h)(0x64ABB208)
 I (..\FreeRTOS\Source\include\projdefs.h)(0x64020E50)
 I (..\FreeRTOS\Source\include\portable.h)(0x64020E50)
 I (..\FreeRTOS\Source\include\deprecated_definitions.h)(0x64020E50)
@@ -581,7 +582,7 @@ I (E:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x5F63877C)
 I (E:\Keil_v5\ARM\ARMCC\include\string.h)(0x5F63878A)
 I (E:\Keil_v5\ARM\ARMCC\include\assert.h)(0x5F63877C)
 I (..\FreeRTOS\Source\include\mpu_wrappers.h)(0x64020E50)
-I (..\FreeRTOS\Source\include\task.h)(0x64020E50)
+I (..\FreeRTOS\Source\include\task.h)(0x64ABA8B0)
 I (..\FreeRTOS\Source\include\list.h)(0x64020E50)
 I (..\FreeRTOS\Source\include\croutine.h)(0x64020E50)
 F (..\FreeRTOS\Source\event_groups.c)(0x64020E50)(--c99 -c --cpu Cortex-M0+ -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ..\Libraries\inc -I ..\USER\inc -I ..\PRV -I ..\IT6635_OK_LEE20191108 -I ..\IT6635_OK_LEE20191108\chip -I ..\IT6635_OK_LEE20191108\Customer -I ..\ITE_6635_OK_LBY20230608_DUAL -I ..\ITE_6635_OK_LBY20230608_DUAL\chip -I ..\ITE_6635_OK_LBY20230608_DUAL\Customer -I ..\FreeRTOS -I ..\FreeRTOS\Source\include -I ..\FreeRTOS\Source\portable\RVDS\ARM_CM0-I.\RTE\_Project-IE:\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\Core\Include-IE:\Arm\Packs\WHXY\CW32F030_DFP\1.0.1\Device\Include-D__UVISION_VERSION="532" -D_RTE_ -D_RTE_ -DBOARD_CW32F030CX-o .\output\exe\event_groups.o --omf_browse .\output\exe\event_groups.crf --depend .\output\exe\event_groups.d)
@@ -589,7 +590,7 @@ I (E:\Keil_v5\ARM\ARMCC\include\stdlib.h)(0x5F63877C)
 I (..\FreeRTOS\Source\include\FreeRTOS.h)(0x64020E50)
 I (E:\Keil_v5\ARM\ARMCC\include\stddef.h)(0x5F63877C)
 I (E:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x63E45B4D)
-I (..\FreeRTOS\FreeRTOSConfig.h)(0x64A7E1C8)
+I (..\FreeRTOS\FreeRTOSConfig.h)(0x64ABB208)
 I (..\FreeRTOS\Source\include\projdefs.h)(0x64020E50)
 I (..\FreeRTOS\Source\include\portable.h)(0x64020E50)
 I (..\FreeRTOS\Source\include\deprecated_definitions.h)(0x64020E50)
@@ -605,7 +606,7 @@ I (E:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x5F63877C)
 I (E:\Keil_v5\ARM\ARMCC\include\string.h)(0x5F63878A)
 I (E:\Keil_v5\ARM\ARMCC\include\assert.h)(0x5F63877C)
 I (..\FreeRTOS\Source\include\mpu_wrappers.h)(0x64020E50)
-I (..\FreeRTOS\Source\include\task.h)(0x64020E50)
+I (..\FreeRTOS\Source\include\task.h)(0x64ABA8B0)
 I (..\FreeRTOS\Source\include\list.h)(0x64020E50)
 I (..\FreeRTOS\Source\include\timers.h)(0x64020E50)
 I (..\FreeRTOS\Source\include\event_groups.h)(0x64020E50)
@@ -614,7 +615,7 @@ I (E:\Keil_v5\ARM\ARMCC\include\stdlib.h)(0x5F63877C)
 I (..\FreeRTOS\Source\include\FreeRTOS.h)(0x64020E50)
 I (E:\Keil_v5\ARM\ARMCC\include\stddef.h)(0x5F63877C)
 I (E:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x63E45B4D)
-I (..\FreeRTOS\FreeRTOSConfig.h)(0x64A7E1C8)
+I (..\FreeRTOS\FreeRTOSConfig.h)(0x64ABB208)
 I (..\FreeRTOS\Source\include\projdefs.h)(0x64020E50)
 I (..\FreeRTOS\Source\include\portable.h)(0x64020E50)
 I (..\FreeRTOS\Source\include\deprecated_definitions.h)(0x64020E50)
@@ -637,7 +638,7 @@ I (E:\Keil_v5\ARM\ARMCC\include\string.h)(0x5F63878A)
 I (..\FreeRTOS\Source\include\FreeRTOS.h)(0x64020E50)
 I (E:\Keil_v5\ARM\ARMCC\include\stddef.h)(0x5F63877C)
 I (E:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x63E45B4D)
-I (..\FreeRTOS\FreeRTOSConfig.h)(0x64A7E1C8)
+I (..\FreeRTOS\FreeRTOSConfig.h)(0x64ABB208)
 I (..\FreeRTOS\Source\include\projdefs.h)(0x64020E50)
 I (..\FreeRTOS\Source\include\portable.h)(0x64020E50)
 I (..\FreeRTOS\Source\include\deprecated_definitions.h)(0x64020E50)
@@ -652,7 +653,7 @@ I (..\Libraries\inc\base_types.h)(0x6274DF67)
 I (E:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x5F63877C)
 I (E:\Keil_v5\ARM\ARMCC\include\assert.h)(0x5F63877C)
 I (..\FreeRTOS\Source\include\mpu_wrappers.h)(0x64020E50)
-I (..\FreeRTOS\Source\include\task.h)(0x64020E50)
+I (..\FreeRTOS\Source\include\task.h)(0x64ABA8B0)
 I (..\FreeRTOS\Source\include\list.h)(0x64020E50)
 I (..\FreeRTOS\Source\include\queue.h)(0x64020E50)
 F (..\FreeRTOS\Source\stream_buffer.c)(0x64020E50)(--c99 -c --cpu Cortex-M0+ -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ..\Libraries\inc -I ..\USER\inc -I ..\PRV -I ..\IT6635_OK_LEE20191108 -I ..\IT6635_OK_LEE20191108\chip -I ..\IT6635_OK_LEE20191108\Customer -I ..\ITE_6635_OK_LBY20230608_DUAL -I ..\ITE_6635_OK_LBY20230608_DUAL\chip -I ..\ITE_6635_OK_LBY20230608_DUAL\Customer -I ..\FreeRTOS -I ..\FreeRTOS\Source\include -I ..\FreeRTOS\Source\portable\RVDS\ARM_CM0-I.\RTE\_Project-IE:\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\Core\Include-IE:\Arm\Packs\WHXY\CW32F030_DFP\1.0.1\Device\Include-D__UVISION_VERSION="532" -D_RTE_ -D_RTE_ -DBOARD_CW32F030CX-o .\output\exe\stream_buffer.o --omf_browse .\output\exe\stream_buffer.crf --depend .\output\exe\stream_buffer.d)
@@ -660,7 +661,7 @@ I (E:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x63E45B4D)
 I (E:\Keil_v5\ARM\ARMCC\include\string.h)(0x5F63878A)
 I (..\FreeRTOS\Source\include\FreeRTOS.h)(0x64020E50)
 I (E:\Keil_v5\ARM\ARMCC\include\stddef.h)(0x5F63877C)
-I (..\FreeRTOS\FreeRTOSConfig.h)(0x64A7E1C8)
+I (..\FreeRTOS\FreeRTOSConfig.h)(0x64ABB208)
 I (..\FreeRTOS\Source\include\projdefs.h)(0x64020E50)
 I (..\FreeRTOS\Source\include\portable.h)(0x64020E50)
 I (..\FreeRTOS\Source\include\deprecated_definitions.h)(0x64020E50)
@@ -675,7 +676,7 @@ I (..\Libraries\inc\base_types.h)(0x6274DF67)
 I (E:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x5F63877C)
 I (E:\Keil_v5\ARM\ARMCC\include\assert.h)(0x5F63877C)
 I (..\FreeRTOS\Source\include\mpu_wrappers.h)(0x64020E50)
-I (..\FreeRTOS\Source\include\task.h)(0x64020E50)
+I (..\FreeRTOS\Source\include\task.h)(0x64ABA8B0)
 I (..\FreeRTOS\Source\include\list.h)(0x64020E50)
 I (..\FreeRTOS\Source\include\stream_buffer.h)(0x64020E50)
 F (..\FreeRTOS\Source\tasks.c)(0x64020E50)(--c99 -c --cpu Cortex-M0+ -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ..\Libraries\inc -I ..\USER\inc -I ..\PRV -I ..\IT6635_OK_LEE20191108 -I ..\IT6635_OK_LEE20191108\chip -I ..\IT6635_OK_LEE20191108\Customer -I ..\ITE_6635_OK_LBY20230608_DUAL -I ..\ITE_6635_OK_LBY20230608_DUAL\chip -I ..\ITE_6635_OK_LBY20230608_DUAL\Customer -I ..\FreeRTOS -I ..\FreeRTOS\Source\include -I ..\FreeRTOS\Source\portable\RVDS\ARM_CM0-I.\RTE\_Project-IE:\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\Core\Include-IE:\Arm\Packs\WHXY\CW32F030_DFP\1.0.1\Device\Include-D__UVISION_VERSION="532" -D_RTE_ -D_RTE_ -DBOARD_CW32F030CX-o .\output\exe\tasks.o --omf_browse .\output\exe\tasks.crf --depend .\output\exe\tasks.d)
@@ -684,7 +685,7 @@ I (E:\Keil_v5\ARM\ARMCC\include\string.h)(0x5F63878A)
 I (..\FreeRTOS\Source\include\FreeRTOS.h)(0x64020E50)
 I (E:\Keil_v5\ARM\ARMCC\include\stddef.h)(0x5F63877C)
 I (E:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x63E45B4D)
-I (..\FreeRTOS\FreeRTOSConfig.h)(0x64A7E1C8)
+I (..\FreeRTOS\FreeRTOSConfig.h)(0x64ABB208)
 I (..\FreeRTOS\Source\include\projdefs.h)(0x64020E50)
 I (..\FreeRTOS\Source\include\portable.h)(0x64020E50)
 I (..\FreeRTOS\Source\include\deprecated_definitions.h)(0x64020E50)
@@ -699,7 +700,7 @@ I (..\Libraries\inc\base_types.h)(0x6274DF67)
 I (E:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x5F63877C)
 I (E:\Keil_v5\ARM\ARMCC\include\assert.h)(0x5F63877C)
 I (..\FreeRTOS\Source\include\mpu_wrappers.h)(0x64020E50)
-I (..\FreeRTOS\Source\include\task.h)(0x64020E50)
+I (..\FreeRTOS\Source\include\task.h)(0x64ABA8B0)
 I (..\FreeRTOS\Source\include\list.h)(0x64020E50)
 I (..\FreeRTOS\Source\include\timers.h)(0x64020E50)
 I (..\FreeRTOS\Source\include\stack_macros.h)(0x64020E50)
@@ -708,7 +709,7 @@ I (E:\Keil_v5\ARM\ARMCC\include\stdlib.h)(0x5F63877C)
 I (..\FreeRTOS\Source\include\FreeRTOS.h)(0x64020E50)
 I (E:\Keil_v5\ARM\ARMCC\include\stddef.h)(0x5F63877C)
 I (E:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x63E45B4D)
-I (..\FreeRTOS\FreeRTOSConfig.h)(0x64A7E1C8)
+I (..\FreeRTOS\FreeRTOSConfig.h)(0x64ABB208)
 I (..\FreeRTOS\Source\include\projdefs.h)(0x64020E50)
 I (..\FreeRTOS\Source\include\portable.h)(0x64020E50)
 I (..\FreeRTOS\Source\include\deprecated_definitions.h)(0x64020E50)
@@ -724,7 +725,7 @@ I (E:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x5F63877C)
 I (E:\Keil_v5\ARM\ARMCC\include\string.h)(0x5F63878A)
 I (E:\Keil_v5\ARM\ARMCC\include\assert.h)(0x5F63877C)
 I (..\FreeRTOS\Source\include\mpu_wrappers.h)(0x64020E50)
-I (..\FreeRTOS\Source\include\task.h)(0x64020E50)
+I (..\FreeRTOS\Source\include\task.h)(0x64ABA8B0)
 I (..\FreeRTOS\Source\include\list.h)(0x64020E50)
 I (..\FreeRTOS\Source\include\queue.h)(0x64020E50)
 I (..\FreeRTOS\Source\include\timers.h)(0x64020E50)
@@ -734,7 +735,7 @@ I (E:\Keil_v5\ARM\ARMCC\include\string.h)(0x5F63878A)
 I (..\FreeRTOS\Source\include\FreeRTOS.h)(0x64020E50)
 I (E:\Keil_v5\ARM\ARMCC\include\stddef.h)(0x5F63877C)
 I (E:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x63E45B4D)
-I (..\FreeRTOS\FreeRTOSConfig.h)(0x64A7E1C8)
+I (..\FreeRTOS\FreeRTOSConfig.h)(0x64ABB208)
 I (..\FreeRTOS\Source\include\projdefs.h)(0x64020E50)
 I (..\FreeRTOS\Source\include\portable.h)(0x64020E50)
 I (..\FreeRTOS\Source\include\deprecated_definitions.h)(0x64020E50)
@@ -749,13 +750,13 @@ I (..\Libraries\inc\base_types.h)(0x6274DF67)
 I (E:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x5F63877C)
 I (E:\Keil_v5\ARM\ARMCC\include\assert.h)(0x5F63877C)
 I (..\FreeRTOS\Source\include\mpu_wrappers.h)(0x64020E50)
-I (..\FreeRTOS\Source\include\task.h)(0x64020E50)
+I (..\FreeRTOS\Source\include\task.h)(0x64ABA8B0)
 I (..\FreeRTOS\Source\include\list.h)(0x64020E50)
 F (..\FreeRTOS\Source\portable\RVDS\ARM_CM0\port.c)(0x64020E50)(--c99 -c --cpu Cortex-M0+ -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ..\Libraries\inc -I ..\USER\inc -I ..\PRV -I ..\IT6635_OK_LEE20191108 -I ..\IT6635_OK_LEE20191108\chip -I ..\IT6635_OK_LEE20191108\Customer -I ..\ITE_6635_OK_LBY20230608_DUAL -I ..\ITE_6635_OK_LBY20230608_DUAL\chip -I ..\ITE_6635_OK_LBY20230608_DUAL\Customer -I ..\FreeRTOS -I ..\FreeRTOS\Source\include -I ..\FreeRTOS\Source\portable\RVDS\ARM_CM0-I.\RTE\_Project-IE:\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\Core\Include-IE:\Arm\Packs\WHXY\CW32F030_DFP\1.0.1\Device\Include-D__UVISION_VERSION="532" -D_RTE_ -D_RTE_ -DBOARD_CW32F030CX-o .\output\exe\port.o --omf_browse .\output\exe\port.crf --depend .\output\exe\port.d)
 I (..\FreeRTOS\Source\include\FreeRTOS.h)(0x64020E50)
 I (E:\Keil_v5\ARM\ARMCC\include\stddef.h)(0x5F63877C)
 I (E:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x63E45B4D)
-I (..\FreeRTOS\FreeRTOSConfig.h)(0x64A7E1C8)
+I (..\FreeRTOS\FreeRTOSConfig.h)(0x64ABB208)
 I (..\FreeRTOS\Source\include\projdefs.h)(0x64020E50)
 I (..\FreeRTOS\Source\include\portable.h)(0x64020E50)
 I (..\FreeRTOS\Source\include\deprecated_definitions.h)(0x64020E50)
@@ -771,5 +772,5 @@ I (E:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x5F63877C)
 I (E:\Keil_v5\ARM\ARMCC\include\string.h)(0x5F63878A)
 I (E:\Keil_v5\ARM\ARMCC\include\assert.h)(0x5F63877C)
 I (..\FreeRTOS\Source\include\mpu_wrappers.h)(0x64020E50)
-I (..\FreeRTOS\Source\include\task.h)(0x64020E50)
+I (..\FreeRTOS\Source\include\task.h)(0x64ABA8B0)
 I (..\FreeRTOS\Source\include\list.h)(0x64020E50)

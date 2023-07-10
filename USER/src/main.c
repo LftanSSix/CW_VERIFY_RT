@@ -5,14 +5,23 @@
 /* FreeRTOS includes. */
 #include "FreeRTOS.h"
 #include "task.h"
+ #include "queue.h"
+ 
+// 定义消息队列句柄和队列长度
+#define QUEUE_LENGTH 5
+QueueHandle_t xQueue = NULL;
 
 static TaskHandle_t AppTaskCreate_Handle = NULL;
 TaskHandle_t testTask1Handle = NULL;
 TaskHandle_t testTask2Handle = NULL;
+TaskHandle_t sendTaskHandle = NULL;
+TaskHandle_t revTaskHandle = NULL;
 
 static void AppTaskCreate(void);
 void testTask1(void);
 void testTask2(void);
+void SenderTask(void* pvParameters);
+void ReceiverTask(void* pvParameters);
 
 extern uint32_t SystemCoreClock;
 extern const u8 EQ_Address[];
@@ -57,7 +66,7 @@ int32_t main(void)
    /* Create AppTaskCreate Task */
   xReturn = xTaskCreate((TaskFunction_t )AppTaskCreate,
                         (const char*    )"AppTaskCreate",
-                        (uint16_t       )512,
+                        (uint16_t       )200,
                         (void*          )NULL,
                         (UBaseType_t    )1,
                         (TaskHandle_t*  )&AppTaskCreate_Handle);
@@ -76,23 +85,39 @@ static void AppTaskCreate(void)
 {
   BaseType_t xReturn = pdPASS;
   taskENTER_CRITICAL();
-  xReturn = xTaskCreate((TaskFunction_t )testTask1,
-                        (const char*    )"testTask1",
-                        (uint16_t       )100, //
+	
+	// 创建消息队列
+	xQueue = xQueueCreate(QUEUE_LENGTH, sizeof(char*));
+	if(xQueue != NULL)
+		printf("Create Queue ok \r\n");
+	
+	
+  xReturn = xTaskCreate((TaskFunction_t )SenderTask,
+                        (const char*    )"SenderTask",
+                        (uint16_t       )50, //
                         (void*          )NULL, 
-                        (UBaseType_t    )1,
+                        (UBaseType_t    )2,
+                        (TaskHandle_t*  )&sendTaskHandle);
+  if(xReturn == pdTRUE)
+	  printf("Create SenderTask ok\r\n");
+  
+	xReturn = xTaskCreate((TaskFunction_t )testTask1,
+                        (const char*    )"testTask1",
+                        (uint16_t       )50, //
+                        (void*          )NULL, 
+                        (UBaseType_t    )3,
                         (TaskHandle_t*  )&testTask1Handle);
   if(xReturn == pdTRUE)
 	  printf("Create task1 ok\r\n");
-  
-  xReturn = xTaskCreate((TaskFunction_t )testTask2,
-                        (const char*    )"testTask2",
-                        (uint16_t       )100,
+	
+  xReturn = xTaskCreate((TaskFunction_t )ReceiverTask,
+                        (const char*    )"ReceiverTask",
+                        (uint16_t       )50,
                         (void*          )NULL,
-                        (UBaseType_t    )3,
-                        (TaskHandle_t*  )&testTask2Handle);
+                        (UBaseType_t    )2,
+                        (TaskHandle_t*  )&revTaskHandle);
   if(xReturn == pdTRUE)
-	  printf("Create task2 ok\r\n");
+	  printf("Create ReceiverTask ok\r\n");
 	printf("Before TaskDelete FreeHeapSize is %d\r\n", xPortGetFreeHeapSize());
   vTaskDelete(AppTaskCreate_Handle);
 	printf("After TaskDelete FreeHeapSize is %d\r\n", xPortGetFreeHeapSize());
@@ -102,13 +127,15 @@ static void AppTaskCreate(void)
 void testTask1(void)
 {
 	printf("FreeHeapSize is %d\r\n", xPortGetFreeHeapSize());
-
+	char *tt1 = "testTask1 2s run";
 //	TickType_t tickcnt[2] = {0};
 	for( ;; )
 	{	
-		PA03_TOG();
+		//PA03_TOG();
+		PA04_SETLOW();
+		xQueueSend(xQueue, &tt1, portMAX_DELAY);
 //		tickcnt[0] = xTaskGetTickCount();
-		vTaskDelay(5);
+		vTaskDelay(4000);
 //		tickcnt[1] = xTaskGetTickCount();
 //		printf("interval is : %d\r\n", (tickcnt[1] - tickcnt[0]));
 	}
@@ -118,8 +145,9 @@ void testTask2(void)
 {
 	for( ;; )
 	{
-		PA04_TOG();
-		vTaskDelay(20);
+		//PA04_TOG();
+		PA04_SETHIGH();
+		//vTaskDelay(5);
 	}
 }
 
@@ -220,6 +248,41 @@ void Lvd_Config(void)
   LVD_Enable();                                         //LVD使能
 }
 
+//add test
+
+// 发送任务
+void SenderTask(void* pvParameters)
+{
+    char *data = "setokoiyfcdcfgkkokkkkkkkkkk";
+		int tet1 = 12;
+    while (1)
+    {
+        // 发送数据到消息队列
+        xQueueSend(xQueue, &tet1, portMAX_DELAY);
+
+        // 延时一段时间
+        vTaskDelay(pdMS_TO_TICKS(1000));
+    }
+}
+
+// 接收任务
+void ReceiverTask(void* pvParameters)
+{
+    int receivedData;
+	  char *rechar;
+    while (1)
+    {
+        // 从消息队列接收数据
+        if (xQueueReceive(xQueue, &receivedData, portMAX_DELAY))
+        {
+            // 处理接收到的数据
+            //printf("Received data: %s\r\n", rechar);
+						printf("Received data: %d\r\n", receivedData);
+        }
+    }
+}
+
+//enddddd
 /*-----------------------------------------------------------*/
 
 void vApplicationMallocFailedHook( void )
@@ -250,6 +313,7 @@ void vApplicationIdleHook( void )
 	important that vApplicationIdleHook() is permitted to return to its calling
 	function, because it is the responsibility of the idle task to clean up
 	memory allocated by the kernel to any task that has since been deleted. */
+	PA04_TOG();
 }
 /*-----------------------------------------------------------*/
 
