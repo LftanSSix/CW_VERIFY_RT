@@ -1,6 +1,6 @@
 <mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/145.0.0.0 Safari/537.36" version="29.6.0">
   <diagram id="C5RBs43oDa-KdzZeNtuy" name="Page-1">
-    <mxGraphModel dx="7130" dy="3755" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="3169" dy="1669" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="WIyWlLk6GJQsqaUBKTNV-0" />
         <mxCell id="WIyWlLk6GJQsqaUBKTNV-1" parent="WIyWlLk6GJQsqaUBKTNV-0" />
@@ -21,18 +21,6 @@
         </mxCell>
         <mxCell id="QhxwN71QuPhES7CsP7da-20" parent="WIyWlLk6GJQsqaUBKTNV-1" style="whiteSpace=wrap;strokeWidth=2;" value="功能：与主控CPU高速数据交换，上传至主站" vertex="1">
           <mxGeometry height="78" width="260" x="997" y="1521" as="geometry" />
-        </mxCell>
-        <mxCell id="QhxwN71QuPhES7CsP7da-21" parent="WIyWlLk6GJQsqaUBKTNV-1" style="whiteSpace=wrap;strokeWidth=2;" value="近端无线通信模块" vertex="1">
-          <mxGeometry height="54" width="188" x="473" y="1707" as="geometry" />
-        </mxCell>
-        <mxCell id="QhxwN71QuPhES7CsP7da-22" parent="WIyWlLk6GJQsqaUBKTNV-1" style="whiteSpace=wrap;strokeWidth=2;" value="Wi-Fi（802.11n）从机" vertex="1">
-          <mxGeometry height="54" width="217" x="720" y="1707" as="geometry" />
-        </mxCell>
-        <mxCell id="QhxwN71QuPhES7CsP7da-23" parent="WIyWlLk6GJQsqaUBKTNV-1" style="whiteSpace=wrap;strokeWidth=2;" value="带宽：数十至上百Mbps" vertex="1">
-          <mxGeometry height="54" width="224" x="1015" y="1649" as="geometry" />
-        </mxCell>
-        <mxCell id="QhxwN71QuPhES7CsP7da-24" parent="WIyWlLk6GJQsqaUBKTNV-1" style="whiteSpace=wrap;strokeWidth=2;" value="用途：接收采集端原始波形数据" vertex="1">
-          <mxGeometry height="78" width="260" x="997" y="2053" as="geometry" />
         </mxCell>
         <mxCell id="QhxwN71QuPhES7CsP7da-25" parent="WIyWlLk6GJQsqaUBKTNV-1" style="whiteSpace=wrap;strokeWidth=2;" value="辅助功能模块" vertex="1">
           <mxGeometry height="54" width="156" x="489" y="1863" as="geometry" />
@@ -56,13 +44,13 @@
           <mxGeometry height="54" width="175" x="741" y="2227" as="geometry" />
         </mxCell>
         <mxCell id="QhxwN71QuPhES7CsP7da-32" parent="WIyWlLk6GJQsqaUBKTNV-1" style="whiteSpace=wrap;strokeWidth=2;" value="录波数据接收" vertex="1">
-          <mxGeometry height="54" width="156" x="489" y="2383" as="geometry" />
+          <mxGeometry height="54" width="156" x="743" y="2383" as="geometry" />
         </mxCell>
         <mxCell id="QhxwN71QuPhES7CsP7da-33" parent="WIyWlLk6GJQsqaUBKTNV-1" style="whiteSpace=wrap;strokeWidth=2;" value="高速录波数据" vertex="1">
-          <mxGeometry height="54" width="156" x="751" y="2331" as="geometry" />
+          <mxGeometry height="54" width="156" x="1005" y="2331" as="geometry" />
         </mxCell>
         <mxCell id="QhxwN71QuPhES7CsP7da-34" parent="WIyWlLk6GJQsqaUBKTNV-1" style="whiteSpace=wrap;strokeWidth=2;" value="低速录波数据" vertex="1">
-          <mxGeometry height="54" width="156" x="751" y="2435" as="geometry" />
+          <mxGeometry height="54" width="156" x="1005" y="2435" as="geometry" />
         </mxCell>
         <mxCell id="QhxwN71QuPhES7CsP7da-35" parent="WIyWlLk6GJQsqaUBKTNV-1" style="whiteSpace=wrap;strokeWidth=2;" value="升级管理" vertex="1">
           <mxGeometry height="54" width="124" x="505" y="2643" as="geometry" />
@@ -111,7 +99,7 @@
         <mxCell id="QhxwN71QuPhES7CsP7da-45" parent="WIyWlLk6GJQsqaUBKTNV-1" style="whiteSpace=wrap;strokeWidth=2;" value="系统工作流程" vertex="1">
           <mxGeometry height="54" width="156" x="489" y="3175" as="geometry" />
         </mxCell>
-        <mxCell id="QhxwN71QuPhES7CsP7da-46" parent="WIyWlLk6GJQsqaUBKTNV-1" style="whiteSpace=wrap;strokeWidth=2;" value="1. 同步触发" vertex="1">
+        <mxCell id="QhxwN71QuPhES7CsP7da-46" parent="WIyWlLk6GJQsqaUBKTNV-1" style="whiteSpace=wrap;strokeWidth=2;" value="1. 同步模块触发" vertex="1">
           <mxGeometry height="54" width="143" x="757" y="3059" as="geometry" />
         </mxCell>
         <mxCell id="QhxwN71QuPhES7CsP7da-47" parent="WIyWlLk6GJQsqaUBKTNV-1" style="whiteSpace=wrap;strokeWidth=2;" value="汇集单元上电" vertex="1">
@@ -230,30 +218,12 @@
             </Array>
           </mxGeometry>
         </mxCell>
-        <mxCell id="QhxwN71QuPhES7CsP7da-88" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="QhxwN71QuPhES7CsP7da-16" style="curved=1;startArrow=none;endArrow=block;exitX=0.53;exitY=0;entryX=0;entryY=0.5;rounded=0;" target="QhxwN71QuPhES7CsP7da-21" value="">
+        <mxCell id="QhxwN71QuPhES7CsP7da-88" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="QhxwN71QuPhES7CsP7da-16" style="curved=1;startArrow=none;endArrow=block;exitX=0.53;exitY=0;entryX=0;entryY=0.5;rounded=0;" value="">
           <mxGeometry relative="1" as="geometry">
             <Array as="points">
               <mxPoint x="448" y="1734" />
             </Array>
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="QhxwN71QuPhES7CsP7da-89" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="QhxwN71QuPhES7CsP7da-21" style="curved=1;startArrow=none;endArrow=block;exitX=1;exitY=0.5;entryX=0;entryY=0.5;rounded=0;" target="QhxwN71QuPhES7CsP7da-22" value="">
-          <mxGeometry relative="1" as="geometry">
-            <Array as="points" />
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="QhxwN71QuPhES7CsP7da-90" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="QhxwN71QuPhES7CsP7da-22" style="curved=1;startArrow=none;endArrow=block;exitX=0.81;exitY=0;entryX=0;entryY=0.5;rounded=0;" target="QhxwN71QuPhES7CsP7da-23" value="">
-          <mxGeometry relative="1" as="geometry">
-            <Array as="points">
-              <mxPoint x="972" y="1676" />
-            </Array>
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="QhxwN71QuPhES7CsP7da-91" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="QhxwN71QuPhES7CsP7da-22" style="curved=1;startArrow=none;endArrow=block;exitX=0.55;exitY=1;entryX=0;entryY=0.5;rounded=0;" target="QhxwN71QuPhES7CsP7da-24" value="">
-          <mxGeometry relative="1" as="geometry">
-            <Array as="points">
-              <mxPoint x="972" y="2092" />
-            </Array>
+            <mxPoint x="473" y="1734" as="targetPoint" />
           </mxGeometry>
         </mxCell>
         <mxCell id="QhxwN71QuPhES7CsP7da-92" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="QhxwN71QuPhES7CsP7da-16" style="curved=1;startArrow=none;endArrow=block;exitX=0.54;exitY=0;entryX=0;entryY=0.5;rounded=0;" target="QhxwN71QuPhES7CsP7da-25" value="">
@@ -303,7 +273,7 @@
             </Array>
           </mxGeometry>
         </mxCell>
-        <mxCell id="QhxwN71QuPhES7CsP7da-99" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="QhxwN71QuPhES7CsP7da-16" style="curved=1;startArrow=none;endArrow=block;exitX=1;exitY=0.5;entryX=0;entryY=0.5;rounded=0;" target="QhxwN71QuPhES7CsP7da-32" value="">
+        <mxCell id="QhxwN71QuPhES7CsP7da-99" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="QhxwN71QuPhES7CsP7da-175" style="curved=1;startArrow=none;endArrow=block;exitX=1;exitY=0.5;entryX=0;entryY=0.5;rounded=0;" target="QhxwN71QuPhES7CsP7da-32" value="">
           <mxGeometry relative="1" as="geometry">
             <Array as="points" />
           </mxGeometry>
@@ -311,14 +281,14 @@
         <mxCell id="QhxwN71QuPhES7CsP7da-100" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="QhxwN71QuPhES7CsP7da-32" style="curved=1;startArrow=none;endArrow=block;exitX=0.9;exitY=0;entryX=0;entryY=0.5;rounded=0;" target="QhxwN71QuPhES7CsP7da-33" value="">
           <mxGeometry relative="1" as="geometry">
             <Array as="points">
-              <mxPoint x="686" y="2358" />
+              <mxPoint x="940" y="2358" />
             </Array>
           </mxGeometry>
         </mxCell>
         <mxCell id="QhxwN71QuPhES7CsP7da-101" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="QhxwN71QuPhES7CsP7da-32" style="curved=1;startArrow=none;endArrow=block;exitX=0.9;exitY=1;entryX=0;entryY=0.5;rounded=0;" target="QhxwN71QuPhES7CsP7da-34" value="">
           <mxGeometry relative="1" as="geometry">
             <Array as="points">
-              <mxPoint x="686" y="2462" />
+              <mxPoint x="940" y="2462" />
             </Array>
           </mxGeometry>
         </mxCell>
@@ -636,6 +606,16 @@
         </mxCell>
         <mxCell id="QhxwN71QuPhES7CsP7da-170" parent="WIyWlLk6GJQsqaUBKTNV-1" style="whiteSpace=wrap;strokeWidth=2;" value="低功耗设计" vertex="1">
           <mxGeometry height="54" width="156" x="489" y="3630" as="geometry" />
+        </mxCell>
+        <mxCell id="QhxwN71QuPhES7CsP7da-176" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="QhxwN71QuPhES7CsP7da-16" style="curved=1;startArrow=none;endArrow=block;exitX=1;exitY=0.5;entryX=0;entryY=0.5;rounded=0;" target="QhxwN71QuPhES7CsP7da-175" value="">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points" />
+            <mxPoint x="423" y="2410" as="sourcePoint" />
+            <mxPoint x="743" y="2410" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="QhxwN71QuPhES7CsP7da-175" parent="WIyWlLk6GJQsqaUBKTNV-1" style="whiteSpace=wrap;strokeWidth=2;" value="近端无线通信模块" vertex="1">
+          <mxGeometry height="54" width="123" x="507" y="2385" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
