@@ -1,206 +1,49 @@
 <mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/145.0.0.0 Safari/537.36" version="29.6.0">
-  <diagram name="第 1 页" id="Yn23n5Ve49EZHOiNFwuc">
-    <mxGraphModel dx="2864" dy="1073" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+  <diagram id="C5RBs43oDa-KdzZeNtuy" name="Page-1">
+    <mxGraphModel dx="1223" dy="898" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
-        <mxCell id="0" />
-        <mxCell id="1" parent="0" />
-        <mxCell id="QgaOJLnxcFIg0LMJmVjl-5" edge="1" parent="1" source="QgaOJLnxcFIg0LMJmVjl-1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;textShadow=0;labelBorderColor=none;fontStyle=0" target="QgaOJLnxcFIg0LMJmVjl-4" value="">
+        <mxCell id="WIyWlLk6GJQsqaUBKTNV-0" />
+        <mxCell id="WIyWlLk6GJQsqaUBKTNV-1" parent="WIyWlLk6GJQsqaUBKTNV-0" />
+        <mxCell id="WIyWlLk6GJQsqaUBKTNV-2" value="" style="rounded=0;html=1;jettySize=auto;orthogonalLoop=1;fontSize=11;endArrow=block;endFill=0;endSize=8;strokeWidth=1;shadow=0;labelBackgroundColor=none;edgeStyle=orthogonalEdgeStyle;" parent="WIyWlLk6GJQsqaUBKTNV-1" source="WIyWlLk6GJQsqaUBKTNV-3" target="WIyWlLk6GJQsqaUBKTNV-6" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="QgaOJLnxcFIg0LMJmVjl-1" parent="1" style="ellipse;whiteSpace=wrap;html=1;textShadow=0;labelBorderColor=none;fontStyle=0;strokeWidth=2;" value="开机" vertex="1">
-          <mxGeometry height="80" width="120" x="419.94" y="40" as="geometry" />
+        <mxCell id="WIyWlLk6GJQsqaUBKTNV-3" value="Lamp doesn&#39;t work" style="rounded=1;whiteSpace=wrap;html=1;fontSize=12;glass=0;strokeWidth=1;shadow=0;" parent="WIyWlLk6GJQsqaUBKTNV-1" vertex="1">
+          <mxGeometry x="160" y="80" width="120" height="40" as="geometry" />
         </mxCell>
-        <mxCell id="QgaOJLnxcFIg0LMJmVjl-7" edge="1" parent="1" source="QgaOJLnxcFIg0LMJmVjl-4" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;textShadow=0;labelBorderColor=none;fontStyle=0" target="QgaOJLnxcFIg0LMJmVjl-6" value="">
-          <mxGeometry relative="1" as="geometry" />
-        </mxCell>
-        <mxCell id="QgaOJLnxcFIg0LMJmVjl-4" parent="1" style="rounded=1;whiteSpace=wrap;html=1;textShadow=0;labelBorderColor=none;fontStyle=0;strokeWidth=2;" value="外设初始化" vertex="1">
-          <mxGeometry height="60" width="120" x="419.94" y="150" as="geometry" />
-        </mxCell>
-        <mxCell id="QgaOJLnxcFIg0LMJmVjl-9" edge="1" parent="1" source="QgaOJLnxcFIg0LMJmVjl-6" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;textShadow=0;labelBorderColor=none;fontStyle=0" target="QgaOJLnxcFIg0LMJmVjl-8" value="">
-          <mxGeometry relative="1" as="geometry" />
-        </mxCell>
-        <mxCell id="QgaOJLnxcFIg0LMJmVjl-10" connectable="0" parent="QgaOJLnxcFIg0LMJmVjl-9" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];textShadow=0;labelBorderColor=none;fontStyle=0" value="否" vertex="1">
-          <mxGeometry relative="1" x="-0.1778" y="1" as="geometry">
+        <mxCell id="WIyWlLk6GJQsqaUBKTNV-4" value="Yes" style="rounded=0;html=1;jettySize=auto;orthogonalLoop=1;fontSize=11;endArrow=block;endFill=0;endSize=8;strokeWidth=1;shadow=0;labelBackgroundColor=none;edgeStyle=orthogonalEdgeStyle;" parent="WIyWlLk6GJQsqaUBKTNV-1" source="WIyWlLk6GJQsqaUBKTNV-6" target="WIyWlLk6GJQsqaUBKTNV-10" edge="1">
+          <mxGeometry y="20" relative="1" as="geometry">
             <mxPoint as="offset" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="QgaOJLnxcFIg0LMJmVjl-45" edge="1" parent="1" source="QgaOJLnxcFIg0LMJmVjl-6" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;textShadow=0;labelBorderColor=none;fontStyle=0" target="QgaOJLnxcFIg0LMJmVjl-44" value="">
-          <mxGeometry relative="1" as="geometry" />
-        </mxCell>
-        <mxCell id="QgaOJLnxcFIg0LMJmVjl-46" connectable="0" parent="QgaOJLnxcFIg0LMJmVjl-45" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];textShadow=0;labelBorderColor=none;fontStyle=0" value="是" vertex="1">
-          <mxGeometry relative="1" x="-0.3615" y="-2" as="geometry">
+        <mxCell id="WIyWlLk6GJQsqaUBKTNV-5" value="No" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;jettySize=auto;orthogonalLoop=1;fontSize=11;endArrow=block;endFill=0;endSize=8;strokeWidth=1;shadow=0;labelBackgroundColor=none;" parent="WIyWlLk6GJQsqaUBKTNV-1" source="WIyWlLk6GJQsqaUBKTNV-6" target="WIyWlLk6GJQsqaUBKTNV-7" edge="1">
+          <mxGeometry y="10" relative="1" as="geometry">
             <mxPoint as="offset" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="QgaOJLnxcFIg0LMJmVjl-6" parent="1" style="rhombus;whiteSpace=wrap;html=1;rounded=1;textShadow=0;labelBorderColor=none;fontStyle=0;strokeWidth=2;" value="看门狗触发" vertex="1">
-          <mxGeometry height="80" width="80" x="439.94" y="240" as="geometry" />
+        <mxCell id="WIyWlLk6GJQsqaUBKTNV-6" value="Lamp&lt;br&gt;plugged in?" style="rhombus;whiteSpace=wrap;html=1;shadow=0;fontFamily=Helvetica;fontSize=12;align=center;strokeWidth=1;spacing=6;spacingTop=-4;" parent="WIyWlLk6GJQsqaUBKTNV-1" vertex="1">
+          <mxGeometry x="170" y="170" width="100" height="80" as="geometry" />
         </mxCell>
-        <mxCell id="QgaOJLnxcFIg0LMJmVjl-12" edge="1" parent="1" source="QgaOJLnxcFIg0LMJmVjl-8" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;textShadow=0;labelBorderColor=none;fontStyle=0" target="QgaOJLnxcFIg0LMJmVjl-11" value="">
-          <mxGeometry relative="1" as="geometry" />
+        <mxCell id="WIyWlLk6GJQsqaUBKTNV-7" value="Plug in lamp" style="rounded=1;whiteSpace=wrap;html=1;fontSize=12;glass=0;strokeWidth=1;shadow=0;" parent="WIyWlLk6GJQsqaUBKTNV-1" vertex="1">
+          <mxGeometry x="320" y="190" width="120" height="40" as="geometry" />
         </mxCell>
-        <mxCell id="QgaOJLnxcFIg0LMJmVjl-31" edge="1" parent="1" source="QgaOJLnxcFIg0LMJmVjl-8" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;textShadow=0;labelBorderColor=none;fontStyle=0" target="QgaOJLnxcFIg0LMJmVjl-20">
-          <mxGeometry relative="1" as="geometry" />
-        </mxCell>
-        <mxCell id="QgaOJLnxcFIg0LMJmVjl-37" edge="1" parent="1" source="QgaOJLnxcFIg0LMJmVjl-8" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;textShadow=0;labelBorderColor=none;fontStyle=0" target="QgaOJLnxcFIg0LMJmVjl-36" value="">
-          <mxGeometry relative="1" as="geometry" />
-        </mxCell>
-        <mxCell id="QgaOJLnxcFIg0LMJmVjl-8" parent="1" style="rounded=1;whiteSpace=wrap;html=1;textShadow=0;labelBorderColor=none;fontStyle=0;strokeWidth=2;" value="FTU状态检测" vertex="1">
-          <mxGeometry height="60" width="120" x="419.94" y="410" as="geometry" />
-        </mxCell>
-        <mxCell id="QgaOJLnxcFIg0LMJmVjl-14" edge="1" parent="1" source="QgaOJLnxcFIg0LMJmVjl-11" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;textShadow=0;labelBorderColor=none;fontStyle=0" target="QgaOJLnxcFIg0LMJmVjl-13" value="">
-          <mxGeometry relative="1" as="geometry" />
-        </mxCell>
-        <mxCell id="QgaOJLnxcFIg0LMJmVjl-18" connectable="0" parent="QgaOJLnxcFIg0LMJmVjl-14" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];textShadow=0;labelBorderColor=none;fontStyle=0" value="否" vertex="1">
-          <mxGeometry relative="1" y="2" as="geometry">
+        <mxCell id="WIyWlLk6GJQsqaUBKTNV-8" value="No" style="rounded=0;html=1;jettySize=auto;orthogonalLoop=1;fontSize=11;endArrow=block;endFill=0;endSize=8;strokeWidth=1;shadow=0;labelBackgroundColor=none;edgeStyle=orthogonalEdgeStyle;" parent="WIyWlLk6GJQsqaUBKTNV-1" source="WIyWlLk6GJQsqaUBKTNV-10" target="WIyWlLk6GJQsqaUBKTNV-11" edge="1">
+          <mxGeometry x="0.3333" y="20" relative="1" as="geometry">
             <mxPoint as="offset" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="QgaOJLnxcFIg0LMJmVjl-16" edge="1" parent="1" source="QgaOJLnxcFIg0LMJmVjl-11" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;textShadow=0;labelBorderColor=none;fontStyle=0" target="QgaOJLnxcFIg0LMJmVjl-15" value="">
-          <mxGeometry relative="1" as="geometry" />
-        </mxCell>
-        <mxCell id="QgaOJLnxcFIg0LMJmVjl-17" connectable="0" parent="QgaOJLnxcFIg0LMJmVjl-16" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];textShadow=0;labelBorderColor=none;fontStyle=0" value="是" vertex="1">
-          <mxGeometry relative="1" x="-0.1143" y="1" as="geometry">
+        <mxCell id="WIyWlLk6GJQsqaUBKTNV-9" value="Yes" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;jettySize=auto;orthogonalLoop=1;fontSize=11;endArrow=block;endFill=0;endSize=8;strokeWidth=1;shadow=0;labelBackgroundColor=none;" parent="WIyWlLk6GJQsqaUBKTNV-1" source="WIyWlLk6GJQsqaUBKTNV-10" target="WIyWlLk6GJQsqaUBKTNV-12" edge="1">
+          <mxGeometry y="10" relative="1" as="geometry">
             <mxPoint as="offset" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="QgaOJLnxcFIg0LMJmVjl-11" parent="1" style="rhombus;whiteSpace=wrap;html=1;rounded=1;textShadow=0;labelBorderColor=none;fontStyle=0;strokeWidth=2;" value="FTU电容电压低" vertex="1">
-          <mxGeometry height="80" width="100" x="239.94" y="400" as="geometry" />
+        <mxCell id="WIyWlLk6GJQsqaUBKTNV-10" value="Bulb&lt;br&gt;burned out?" style="rhombus;whiteSpace=wrap;html=1;shadow=0;fontFamily=Helvetica;fontSize=12;align=center;strokeWidth=1;spacing=6;spacingTop=-4;" parent="WIyWlLk6GJQsqaUBKTNV-1" vertex="1">
+          <mxGeometry x="170" y="290" width="100" height="80" as="geometry" />
         </mxCell>
-        <mxCell id="QgaOJLnxcFIg0LMJmVjl-13" parent="1" style="whiteSpace=wrap;html=1;rounded=1;textShadow=0;labelBorderColor=none;fontStyle=0;strokeWidth=2;" value="关闭备用电源供电" vertex="1">
-          <mxGeometry height="60" width="120" x="229.94" y="570" as="geometry" />
+        <mxCell id="WIyWlLk6GJQsqaUBKTNV-11" value="Repair Lamp" style="rounded=1;whiteSpace=wrap;html=1;fontSize=12;glass=0;strokeWidth=1;shadow=0;" parent="WIyWlLk6GJQsqaUBKTNV-1" vertex="1">
+          <mxGeometry x="160" y="430" width="120" height="40" as="geometry" />
         </mxCell>
-        <mxCell id="QgaOJLnxcFIg0LMJmVjl-15" parent="1" style="whiteSpace=wrap;html=1;rounded=1;textShadow=0;labelBorderColor=none;fontStyle=0;strokeWidth=2;" value="开启备用电源供电（保持15min后关闭）" vertex="1">
-          <mxGeometry height="60" width="120" x="49.94" y="410" as="geometry" />
-        </mxCell>
-        <mxCell id="QgaOJLnxcFIg0LMJmVjl-19" edge="1" parent="1" source="QgaOJLnxcFIg0LMJmVjl-20" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;textShadow=0;labelBorderColor=none;fontStyle=0" target="QgaOJLnxcFIg0LMJmVjl-25" value="">
-          <mxGeometry relative="1" as="geometry" />
-        </mxCell>
-        <mxCell id="QgaOJLnxcFIg0LMJmVjl-32" edge="1" parent="1" source="QgaOJLnxcFIg0LMJmVjl-20" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;textShadow=0;labelBorderColor=none;fontStyle=0" target="QgaOJLnxcFIg0LMJmVjl-29">
-          <mxGeometry relative="1" as="geometry" />
-        </mxCell>
-        <mxCell id="QgaOJLnxcFIg0LMJmVjl-55" edge="1" parent="1" source="QgaOJLnxcFIg0LMJmVjl-20" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;textShadow=0;labelBorderColor=none;fontStyle=0" target="QgaOJLnxcFIg0LMJmVjl-52">
-          <mxGeometry relative="1" as="geometry" />
-        </mxCell>
-        <mxCell id="QgaOJLnxcFIg0LMJmVjl-20" parent="1" style="rounded=1;whiteSpace=wrap;html=1;textShadow=0;labelBorderColor=none;fontStyle=0;strokeWidth=2;" value="温湿度检测" vertex="1">
-          <mxGeometry height="60" width="120" x="419.94" y="690" as="geometry" />
-        </mxCell>
-        <mxCell id="QgaOJLnxcFIg0LMJmVjl-21" edge="1" parent="1" source="QgaOJLnxcFIg0LMJmVjl-25" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;textShadow=0;labelBorderColor=none;fontStyle=0" target="QgaOJLnxcFIg0LMJmVjl-26" value="">
-          <mxGeometry relative="1" as="geometry" />
-        </mxCell>
-        <mxCell id="QgaOJLnxcFIg0LMJmVjl-22" connectable="0" parent="QgaOJLnxcFIg0LMJmVjl-21" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];textShadow=0;labelBorderColor=none;fontStyle=0" value="否" vertex="1">
-          <mxGeometry relative="1" y="2" as="geometry">
-            <mxPoint as="offset" />
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="QgaOJLnxcFIg0LMJmVjl-25" parent="1" style="rhombus;whiteSpace=wrap;html=1;rounded=1;textShadow=0;labelBorderColor=none;fontStyle=0;strokeWidth=2;" value="机箱湿度高于阈值" vertex="1">
-          <mxGeometry height="80" width="100" x="239.94" y="680" as="geometry" />
-        </mxCell>
-        <mxCell id="QgaOJLnxcFIg0LMJmVjl-26" parent="1" style="whiteSpace=wrap;html=1;rounded=1;textShadow=0;labelBorderColor=none;fontStyle=0;strokeWidth=2;" value="关闭抽湿" vertex="1">
-          <mxGeometry height="60" width="120" x="229.94" y="850" as="geometry" />
-        </mxCell>
-        <mxCell id="QgaOJLnxcFIg0LMJmVjl-27" parent="1" style="whiteSpace=wrap;html=1;rounded=1;textShadow=0;labelBorderColor=none;fontStyle=0;strokeWidth=2;" value="开启抽湿" vertex="1">
-          <mxGeometry height="60" width="120" x="49.94" y="690" as="geometry" />
-        </mxCell>
-        <mxCell id="QgaOJLnxcFIg0LMJmVjl-28" edge="1" parent="1" source="QgaOJLnxcFIg0LMJmVjl-29" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;textShadow=0;labelBorderColor=none;fontStyle=0" target="QgaOJLnxcFIg0LMJmVjl-30" value="">
-          <mxGeometry relative="1" as="geometry" />
-        </mxCell>
-        <mxCell id="QgaOJLnxcFIg0LMJmVjl-33" edge="1" parent="1" source="QgaOJLnxcFIg0LMJmVjl-29" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;textShadow=0;labelBorderColor=none;fontStyle=0">
-          <mxGeometry relative="1" as="geometry">
-            <Array as="points">
-              <mxPoint x="480" y="1070" />
-              <mxPoint x="10" y="1070" />
-              <mxPoint x="10" y="220" />
-            </Array>
-            <mxPoint x="479.94" y="220" as="targetPoint" />
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="QgaOJLnxcFIg0LMJmVjl-34" connectable="0" parent="QgaOJLnxcFIg0LMJmVjl-33" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];textShadow=0;labelBorderColor=none;fontStyle=0" value="&lt;font style=&quot;font-size: 12px;&quot;&gt;主循环&lt;/font&gt;" vertex="1">
-          <mxGeometry relative="1" x="0.0706" y="2" as="geometry">
-            <mxPoint as="offset" />
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="QgaOJLnxcFIg0LMJmVjl-29" parent="1" style="rounded=1;whiteSpace=wrap;html=1;textShadow=0;labelBorderColor=none;fontStyle=0;strokeWidth=2;" value="设备电量检测" vertex="1">
-          <mxGeometry height="60" width="120" x="419.94" y="960" as="geometry" />
-        </mxCell>
-        <mxCell id="QgaOJLnxcFIg0LMJmVjl-30" parent="1" style="rhombus;whiteSpace=wrap;html=1;rounded=1;textShadow=0;labelBorderColor=none;fontStyle=0;strokeWidth=2;" value="电压低于阈值" vertex="1">
-          <mxGeometry height="80" width="100" x="239.94" y="950" as="geometry" />
-        </mxCell>
-        <mxCell id="QgaOJLnxcFIg0LMJmVjl-35" edge="1" parent="1" source="QgaOJLnxcFIg0LMJmVjl-30" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;textShadow=0;labelBorderColor=none;fontStyle=0" target="QgaOJLnxcFIg0LMJmVjl-13">
-          <mxGeometry relative="1" as="geometry">
-            <Array as="points">
-              <mxPoint x="29.939999999999998" y="990" />
-              <mxPoint x="29.939999999999998" y="600" />
-            </Array>
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="QgaOJLnxcFIg0LMJmVjl-23" edge="1" parent="1" source="QgaOJLnxcFIg0LMJmVjl-25" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;textShadow=0;labelBorderColor=none;fontStyle=0" target="QgaOJLnxcFIg0LMJmVjl-27" value="">
-          <mxGeometry relative="1" as="geometry" />
-        </mxCell>
-        <mxCell id="QgaOJLnxcFIg0LMJmVjl-24" connectable="0" parent="QgaOJLnxcFIg0LMJmVjl-23" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];textShadow=0;labelBorderColor=none;fontStyle=0" value="是" vertex="1">
-          <mxGeometry relative="1" x="-0.1143" y="1" as="geometry">
-            <mxPoint as="offset" />
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="QgaOJLnxcFIg0LMJmVjl-39" edge="1" parent="1" source="QgaOJLnxcFIg0LMJmVjl-36" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;textShadow=0;labelBorderColor=none;fontStyle=0" target="QgaOJLnxcFIg0LMJmVjl-38" value="">
-          <mxGeometry relative="1" as="geometry" />
-        </mxCell>
-        <mxCell id="QgaOJLnxcFIg0LMJmVjl-42" connectable="0" parent="QgaOJLnxcFIg0LMJmVjl-39" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];textShadow=0;labelBorderColor=none;fontStyle=0" value="是" vertex="1">
-          <mxGeometry relative="1" x="-0.1" as="geometry">
-            <mxPoint as="offset" />
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="QgaOJLnxcFIg0LMJmVjl-41" edge="1" parent="1" source="QgaOJLnxcFIg0LMJmVjl-36" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;textShadow=0;labelBorderColor=none;fontStyle=0" target="QgaOJLnxcFIg0LMJmVjl-40" value="">
-          <mxGeometry relative="1" as="geometry" />
-        </mxCell>
-        <mxCell id="QgaOJLnxcFIg0LMJmVjl-43" connectable="0" parent="QgaOJLnxcFIg0LMJmVjl-41" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];textShadow=0;labelBorderColor=none;fontStyle=0" value="否" vertex="1">
-          <mxGeometry relative="1" x="-0.2222" y="3" as="geometry">
-            <mxPoint as="offset" />
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="QgaOJLnxcFIg0LMJmVjl-36" parent="1" style="rhombus;whiteSpace=wrap;html=1;rounded=1;textShadow=0;labelBorderColor=none;fontStyle=0;strokeWidth=2;" value="FTU 485总线无通讯（&amp;gt;15min）" vertex="1">
-          <mxGeometry height="80" width="80" x="639.94" y="400" as="geometry" />
-        </mxCell>
-        <mxCell id="QgaOJLnxcFIg0LMJmVjl-38" parent="1" style="whiteSpace=wrap;html=1;rounded=1;textShadow=0;labelBorderColor=none;fontStyle=0;strokeWidth=2;" value="开启控制FTU复位（操作等待时间防止频繁复位）" vertex="1">
-          <mxGeometry height="60" width="120" x="779.94" y="410" as="geometry" />
-        </mxCell>
-        <mxCell id="QgaOJLnxcFIg0LMJmVjl-47" edge="1" parent="1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;textShadow=0;labelBorderColor=none;fontStyle=0" target="QgaOJLnxcFIg0LMJmVjl-40">
-          <mxGeometry relative="1" as="geometry">
-            <Array as="points">
-              <mxPoint x="759.94" y="600" />
-            </Array>
-            <mxPoint x="759.94" y="280" as="sourcePoint" />
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="QgaOJLnxcFIg0LMJmVjl-40" parent="1" style="whiteSpace=wrap;html=1;rounded=1;textShadow=0;labelBorderColor=none;fontStyle=0;strokeWidth=2;" value="关闭控制FTU复位" vertex="1">
-          <mxGeometry height="60" width="120" x="619.94" y="570" as="geometry" />
-        </mxCell>
-        <mxCell id="QgaOJLnxcFIg0LMJmVjl-44" parent="1" style="whiteSpace=wrap;html=1;rounded=1;textShadow=0;labelBorderColor=none;fontStyle=0;strokeWidth=2;" value="MCU复位" vertex="1">
-          <mxGeometry height="60" width="120" x="779.94" y="250" as="geometry" />
-        </mxCell>
-        <mxCell id="QgaOJLnxcFIg0LMJmVjl-48" edge="1" parent="1" source="QgaOJLnxcFIg0LMJmVjl-52" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;textShadow=0;labelBorderColor=none;fontStyle=0" target="QgaOJLnxcFIg0LMJmVjl-53" value="">
-          <mxGeometry relative="1" as="geometry" />
-        </mxCell>
-        <mxCell id="QgaOJLnxcFIg0LMJmVjl-49" connectable="0" parent="QgaOJLnxcFIg0LMJmVjl-48" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];textShadow=0;labelBorderColor=none;fontStyle=0" value="是" vertex="1">
-          <mxGeometry relative="1" x="-0.1" as="geometry">
-            <mxPoint as="offset" />
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="QgaOJLnxcFIg0LMJmVjl-50" edge="1" parent="1" source="QgaOJLnxcFIg0LMJmVjl-52" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;textShadow=0;labelBorderColor=none;fontStyle=0" target="QgaOJLnxcFIg0LMJmVjl-54" value="">
-          <mxGeometry relative="1" as="geometry" />
-        </mxCell>
-        <mxCell id="QgaOJLnxcFIg0LMJmVjl-51" connectable="0" parent="QgaOJLnxcFIg0LMJmVjl-50" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];textShadow=0;labelBorderColor=none;fontStyle=0" value="否" vertex="1">
-          <mxGeometry relative="1" x="-0.2222" y="3" as="geometry">
-            <mxPoint as="offset" />
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="QgaOJLnxcFIg0LMJmVjl-52" parent="1" style="rhombus;whiteSpace=wrap;html=1;rounded=1;textShadow=0;labelBorderColor=none;fontStyle=0;strokeWidth=2;" value="机箱湿度高于阈值" vertex="1">
-          <mxGeometry height="80" width="80" x="639.94" y="680" as="geometry" />
-        </mxCell>
-        <mxCell id="QgaOJLnxcFIg0LMJmVjl-53" parent="1" style="whiteSpace=wrap;html=1;rounded=1;textShadow=0;labelBorderColor=none;fontStyle=0;strokeWidth=2;" value="开启散热" vertex="1">
-          <mxGeometry height="60" width="120" x="779.94" y="690" as="geometry" />
-        </mxCell>
-        <mxCell id="QgaOJLnxcFIg0LMJmVjl-54" parent="1" style="whiteSpace=wrap;html=1;rounded=1;textShadow=0;labelBorderColor=none;fontStyle=0;strokeWidth=2;" value="关闭散热" vertex="1">
-          <mxGeometry height="60" width="120" x="619.94" y="850" as="geometry" />
+        <mxCell id="WIyWlLk6GJQsqaUBKTNV-12" value="Replace Bulb" style="rounded=1;whiteSpace=wrap;html=1;fontSize=12;glass=0;strokeWidth=1;shadow=0;" parent="WIyWlLk6GJQsqaUBKTNV-1" vertex="1">
+          <mxGeometry x="320" y="310" width="120" height="40" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
